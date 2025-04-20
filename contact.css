@@ -41,6 +41,7 @@ nav a:hover {
   background-color: #121212;
   border-radius: 12px;
   box-shadow: 0 0 0 transparent;
+  
 }
 
 .contact-section h2 {
@@ -50,24 +51,29 @@ nav a:hover {
 }
 
 /* Shop Info */
-.shop-info {
-  background-color: #1e1e1e;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 183, 255, 0.2);
-  text-align: left;
+.shop-info-flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
-.shop-info h3 {
-  color: #00b3ff;
-  margin-bottom: 1rem;
+.shop-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0, 255, 231, 0.6);
+  transition: transform 0.3s ease;
 }
 
-.shop-info p {
-  color: #ccc;
-  font-size: 1rem;
-  margin: 8px 0;
+.shop-photo:hover {
+  transform: scale(1.05);
+}
+
+.shop-details {
+  flex: 1;
+  min-width: 200px;
 }
 
 /* Contact Form */
